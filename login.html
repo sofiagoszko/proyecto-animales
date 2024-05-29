@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon"> <!--favicon-->
+    <link rel="stylesheet" href="./css/estilos.css"> <!--hoja de estilos-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--boxicon-->
+
+  
+  
+    <!--tipografia-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <title>Iniciar seción</title>
+</head>
+<body>
+    <main class="inicio">
+        <section class="wrapper">
+            <a href="./index.html"><img class="icono" src="./img/icono.png" alt=""></a> <!--enlace para volver al index-->
+            <form class="login" onsubmit=" return validar_ingreso()">
+                <h1>Login</h1>
+
+                <!--usuario-->
+                <div class="input_box validar">
+                    <input type="text" name="username" id="username" placeholder="Username">
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div id="validar_login_usuario" class="validar">&nbsp;    </div>
+
+                <!--contraseña-->
+                <div class="input_box validar">
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <i class='bx bxs-lock-alt' ></i>
+                </div>
+                <div id="validar_login_password" class="validar">&nbsp;    </div>
+
+                
+                <!--check del recuerdame y enlace para recuperar contraseña-->
+                <div class="remember_forgot">
+                    <div class="remember_forgot_item">
+                        <label id="recordar_label"><input type="checkbox" name="recordar" id="recordar">Recuérdame</label>
+                    </div>
+                    <div class="remember_forgot_item">
+                        <a href="./recuperacion.html">¿Olvidaste la contraseña?</a>
+                    </div>
+                    
+                </div>
+
+                <button type="submit" class="boton">Ingresar</button> <!--boton para enviar el formulario-->
+            
+                <!--enlace para crear un usuario-->
+                <div class="registrar_link">
+                    <p>¿No tenés una cuenta? <a href="./registracion.html">Registrate</a>
+                    </p>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
